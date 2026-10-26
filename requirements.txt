@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+xgboost
+faiss-cpu
+sentence-transformers
+google-genai
+flask
+python-dotenv
+joblib

@@ -1,0 +1,14 @@
+
+ticket_id,description,category,priority,resolution
+T001,Cannot reset my password,Login,High,Reset password through email link
+T002,Payment failed during checkout,Payment,High,Retry payment and verify transaction
+T003,Application crashes when opening,Technical,High,Check application logs and restart
+T004,Need to update my email address,Account,Low,Update email in account settings
+T005,Money deducted but order not placed,Payment,High,Verify transaction and process refund if needed
+T006,Forgot my login credentials,Login,Medium,Complete account recovery
+T007,Page loads very slowly,Technical,Medium,Investigate server response time
+T008,Unable to change profile picture,Account,Low,Check image format and upload limits
+T009,Card payment is being declined,Payment,High,Verify payment method and gateway response
+T010,App displays an unexpected error,Technical,Medium,Review logs and reproduce the error
+T011,Password reset link is expired,Login,Medium,Generate a new reset link
+T012,Need help updating account details,Account,Low,Guide user through account settings
