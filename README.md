@@ -52,3 +52,19 @@ An AI-powered project to classify support tickets, predict priority, summarize i
 
 **Technologies:** Python, Pandas, Scikit-learn, TF-IDF,
 Logistic Regression, Joblib.
+
+
+### Day 3: Priority Prediction using XGBoost
+
+- Inspected support ticket priority distribution.
+- Preprocessed ticket descriptions.
+- Encoded priority labels using LabelEncoder.
+- Converted ticket descriptions into numerical features using TF-IDF.
+- Built an XGBoost classification model.
+- Trained the model to predict High, Medium and Low priorities.
+- Evaluated model performance using accuracy and classification report.
+- Saved the trained model using Joblib.
+- Tested priority predictions on new support tickets.
+
+**Technologies:** Python, Pandas, Scikit-learn,
+XGBoost, TF-IDF, LabelEncoder, Joblib.
