@@ -68,3 +68,14 @@ Logistic Regression, Joblib.
 
 **Technologies:** Python, Pandas, Scikit-learn,
 XGBoost, TF-IDF, LabelEncoder, Joblib.
+
+### Day 4: AI-Powered Ticket Summarization using Gemini
+
+- Integrated Google's Gemini API using the Google GenAI Python SDK.
+- Configured secure API key management using environment variables and Python Dotenv.
+- Created a ticket summarization function.
+- Used Gemini Flash-Lite to generate concise summaries of customer support tickets.
+- Extracted the main issue, important details, and customer requirements.
+- Tested summarization using a sample payment failure ticket.
+
+**Technologies:** Python, Gemini API, Google GenAI SDK, Python Dotenv, Generative AI.
