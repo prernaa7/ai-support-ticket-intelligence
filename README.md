@@ -37,3 +37,18 @@ An AI-powered project to classify support tickets, predict priority, summarize i
 3. AI-powered ticket summarization
 4. Similar-ticket retrieval
 5. API deployment
+
+
+
+### Day 2: Ticket Preprocessing and Classification
+
+- Implemented text preprocessing using Python and Regex.
+- Converted ticket descriptions into numerical features using TF-IDF.
+- Built a Logistic Regression classification model.
+- Trained the model to predict support ticket categories.
+- Evaluated model performance using accuracy and classification report.
+- Saved the trained ML pipeline using Joblib.
+- Tested predictions on new support ticket descriptions.
+
+**Technologies:** Python, Pandas, Scikit-learn, TF-IDF,
+Logistic Regression, Joblib.
