@@ -79,3 +79,14 @@ XGBoost, TF-IDF, LabelEncoder, Joblib.
 - Tested summarization using a sample payment failure ticket.
 
 **Technologies:** Python, Gemini API, Google GenAI SDK, Python Dotenv, Generative AI.
+
+### Day 5: Similar Ticket Retrieval using FAISS
+
+- Generated numerical embeddings from support ticket descriptions using Sentence Transformers.
+- Built a FAISS vector index to store and search ticket embeddings.
+- Implemented similarity search to identify previously reported customer issues.
+- Retrieved the top 3 most similar historical support tickets.
+- Displayed matching ticket IDs, descriptions, categories, and resolutions.
+- Tested retrieval using a new payment failure support ticket.
+
+**Technologies:** Python, FAISS, Sentence Transformers, Vector Embeddings, Semantic Search, Pandas.
