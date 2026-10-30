@@ -19,8 +19,10 @@ def clean_text(text):
     return text
 
 
-# Test preprocessing
-sample = "LOGIN ERROR!!! Password Reset 123"
+# Test preprocessing only when this file is executed directly
+if __name__ == "__main__":
 
-print("Original:", sample)
-print("Cleaned:", clean_text(sample))
+    sample = "LOGIN ERROR!!! Password Reset 123"
+
+    print("Original:", sample)
+    print("Cleaned:", clean_text(sample))
