@@ -1,0 +1,9 @@
+article_id,title,content,category
+KB001,Reset Password,"Open the login page, select Forgot Password, and follow the email reset link.",Login
+KB002,Account Locked,"Wait 15 minutes after repeated failed login attempts, then reset your password if needed.",Login
+KB003,Failed Payment,"Check the transaction status. If payment was deducted but the order failed, verify the transaction and process a refund if needed.",Payment
+KB004,Payment Pending,"Allow up to 24 hours for a pending payment to update. If it remains pending, contact the payment provider.",Payment
+KB005,App Crashing,"Restart the application, clear its cache, and install the latest available update.",Technical
+KB006,Update Account Details,"Open Account Settings to update your profile information. Contact support if changes cannot be saved.",Account
+KB007,Slow Application,"Check your internet connection, restart the app, and retry. If the issue continues, report the device and app version.",Technical
+KB008,Incorrect Account Details,"Verify the registered email address and phone number in Account Settings. Contact support to correct details you cannot edit.",Account

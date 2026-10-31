@@ -81,10 +81,12 @@ An AI-powered project to classify support tickets, predict priority, summarize i
 
 **Technologies:** Python, FAISS, Sentence Transformers, Semantic Search.
 
-## Planned Features
+### Knowledge-Base Retrieval
 
-- Knowledge-base retrieval
-- Flask backend API
-- Streamlit user interface
-- Testing and debugging
-- Docker deployment
+- Created a CSV knowledge base containing support articles across Login, Payment, Technical, and Account categories.
+- Generated article embeddings using Sentence Transformers.
+- Implemented semantic search using FAISS to retrieve relevant knowledge-base articles for new support tickets.
+- Displayed article IDs, titles, similarity scores, categories, and content.
+- Tested retrieval using a payment failure ticket and retrieved KB003 as the top result.
+
+**Technologies:** Python, Pandas, FAISS, Sentence Transformers, Vector Embeddings, Semantic Search.
