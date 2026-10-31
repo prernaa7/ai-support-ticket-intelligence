@@ -90,3 +90,32 @@ An AI-powered project to classify support tickets, predict priority, summarize i
 - Tested retrieval using a payment failure ticket and retrieved KB003 as the top result.
 
 **Technologies:** Python, Pandas, FAISS, Sentence Transformers, Vector Embeddings, Semantic Search.
+
+## Testing and Validation
+
+The application was tested locally using Flask API endpoints and the Streamlit user interface.
+
+### API Testing
+- Verified the health check endpoint.
+- Tested category and priority prediction.
+- Tested AI-powered ticket summarization.
+- Tested similar-ticket retrieval.
+- Tested resolution suggestions.
+- Tested knowledge-base retrieval.
+- Confirmed that empty ticket descriptions are rejected with a clear error message.
+
+### UI Testing
+- Verified that the Streamlit interface connects successfully to the Flask API.
+- Tested Login and Payment ticket scenarios.
+- Confirmed that predictions, summaries, similar tickets, suggested resolutions, and knowledge-base articles display correctly.
+- Verified that empty input prompts the user to enter a ticket description.
+
+### Sample Test Results
+| Test Case | Expected Result | Status |
+|---|---|---|
+| Login issue | Login category | Passed |
+| Failed payment | Payment category | Passed |
+| Empty description | Validation error | Passed |
+| Similar-ticket retrieval | Relevant historical tickets | Passed |
+| Knowledge-base retrieval | Relevant articles | Passed |
+
