@@ -1,13 +1,6 @@
 # AI Support Ticket Intelligence System
 
-An AI-powered project to classify support tickets, predict priority, summarize issues, and retrieve similar historical tickets.
-
-## Day 1: Project Setup and Dataset Loading
-
-- Created the project structure and Python virtual environment.
-- Installed Pandas and NumPy.
-- Loaded a CSV dataset using Pandas.
-- Inspected dataset shape, column types, ticket categories, priorities, and missing values.
+An AI-powered project to classify support tickets, predict priority, summarize issues, suggest resolutions, and retrieve similar historical tickets.
 
 ## Dataset
 
@@ -28,48 +21,35 @@ An AI-powered project to classify support tickets, predict priority, summarize i
 - XGBoost
 - Gemini API
 - FAISS
+- Sentence Transformers
 - Flask
 
-## Planned Features
+## Features
 
-1. Ticket category classification
-2. Ticket priority prediction
-3. AI-powered ticket summarization
-4. Similar-ticket retrieval
-5. API deployment
-
-
-
-### Day 2: Ticket Preprocessing and Classification
+### Ticket Category Classification
 
 - Implemented text preprocessing using Python and Regex.
 - Converted ticket descriptions into numerical features using TF-IDF.
-- Built a Logistic Regression classification model.
-- Trained the model to predict support ticket categories.
-- Evaluated model performance using accuracy and classification report.
+- Built a Logistic Regression classification model to predict support ticket categories.
+- Evaluated model performance using accuracy and a classification report.
 - Saved the trained ML pipeline using Joblib.
 - Tested predictions on new support ticket descriptions.
 
-**Technologies:** Python, Pandas, Scikit-learn, TF-IDF,
-Logistic Regression, Joblib.
+**Technologies:** Python, Pandas, Scikit-learn, TF-IDF, Logistic Regression, Joblib.
 
-
-### Day 3: Priority Prediction using XGBoost
+### Ticket Priority Prediction
 
 - Inspected support ticket priority distribution.
-- Preprocessed ticket descriptions.
 - Encoded priority labels using LabelEncoder.
 - Converted ticket descriptions into numerical features using TF-IDF.
-- Built an XGBoost classification model.
-- Trained the model to predict High, Medium and Low priorities.
-- Evaluated model performance using accuracy and classification report.
+- Built an XGBoost classification model to predict High, Medium, and Low priorities.
+- Evaluated model performance using accuracy and a classification report.
 - Saved the trained model using Joblib.
 - Tested priority predictions on new support tickets.
 
-**Technologies:** Python, Pandas, Scikit-learn,
-XGBoost, TF-IDF, LabelEncoder, Joblib.
+**Technologies:** Python, Pandas, Scikit-learn, XGBoost, TF-IDF, LabelEncoder, Joblib.
 
-### Day 4: AI-Powered Ticket Summarization using Gemini
+### AI-Powered Ticket Summarization
 
 - Integrated Google's Gemini API using the Google GenAI Python SDK.
 - Configured secure API key management using environment variables and Python Dotenv.
@@ -80,7 +60,7 @@ XGBoost, TF-IDF, LabelEncoder, Joblib.
 
 **Technologies:** Python, Gemini API, Google GenAI SDK, Python Dotenv, Generative AI.
 
-### Day 5: Similar Ticket Retrieval using FAISS
+### Similar Ticket Retrieval
 
 - Generated numerical embeddings from support ticket descriptions using Sentence Transformers.
 - Built a FAISS vector index to store and search ticket embeddings.
@@ -90,3 +70,21 @@ XGBoost, TF-IDF, LabelEncoder, Joblib.
 - Tested retrieval using a new payment failure support ticket.
 
 **Technologies:** Python, FAISS, Sentence Transformers, Vector Embeddings, Semantic Search, Pandas.
+
+### Resolution Suggestion
+
+- Reused the FAISS vector index and Sentence Transformers to find the closest historical support ticket.
+- Suggested a resolution based on the most similar ticket when its similarity score exceeded a threshold.
+- Displayed the matching ticket ID, similarity score, category, and priority.
+- Handled empty input and cases where no sufficiently similar ticket was found.
+- Tested with a payment failure ticket and retrieved T005 with the suggested resolution: “Verify transaction and process refund if needed.”
+
+**Technologies:** Python, FAISS, Sentence Transformers, Semantic Search.
+
+## Planned Features
+
+- Knowledge-base retrieval
+- Flask backend API
+- Streamlit user interface
+- Testing and debugging
+- Docker deployment
